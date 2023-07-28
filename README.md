@@ -1,4 +1,4 @@
-# Vortexus - A tool to create working projects in minutes
+# Vortexus - A tool to create working projects in seconds
 
 ## Overview
 
@@ -10,7 +10,12 @@ https://github.com/FluffySnowman/vortexus/assets/51316255/db2ca024-8c93-446f-9bd
 
 ## Usage
 
-The binaries can be downloaded from the releases page or can be built from source.
+The binaries can be downloaded from the [releases page](https://github.com/fluffysnowman/vortexus/releases) or can be built from source.
+
+#### Easiest method-
+
+1. Download the binaries from the [releases page](https://github.com/fluffysnowman/vortexus/releases) 
+2. Double click the file to run (windows exe)
 
 ### Using the binaries (recommended)
 
