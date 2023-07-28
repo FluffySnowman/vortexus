@@ -18,7 +18,7 @@ The binaries can be downloaded from the releases page or can be built from sourc
 
 ```bash
 # download the binary to a file
-curl curl https://raw.githubusercontent.com/FluffySnowman/vortexus/binaries/vortexus_linux_amd64 > vortexus
+curl https://raw.githubusercontent.com/FluffySnowman/vortexus/binaries/vortexus_linux_amd64 > vortexus
 
 # change made to executable
 chmod +x vortexus
