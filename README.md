@@ -1,0 +1,78 @@
+# Vortexus - A tool to create working projects in minutes
+
+## Overview
+
+Vortexus is a cross-compatible CLI tool that can be used to create working projects in minutes. Its built in `.go` and can be run on any platform as a binary.
+
+## Demo
+
+# ||add the video here||
+
+## Usage
+
+The binaries can be downloaded from the releases page or can be built from source.
+
+### Using the binaries (recommended)
+
+#### Linux (curl)
+
+```bash
+# download the binary to a file
+curl https://github.com/fluffysnowman/illfigurethisoutlater > vortexus
+
+# change made to executable
+chmod +x vortexus
+
+# run the binary
+./vortexus
+```
+
+#### Windows (curl)
+
+```bash
+# download the binary to a file
+curl https://github.com/fluffysnowman/illfigurethisoutlater> > vortexus.exe
+
+# run the binary
+.\vortexus.exe
+```
+
+### Building from source
+
+Make sue you have `go` version `1.20+` installed on your system. If not, you can download it from [here](https://golang.org/dl/).
+
+```bash
+# clone the repo
+git clone https://github.com/fluffysnowman/vortexus.git --depth 1 --branch mojo
+cd vorutexus
+
+# build the binary
+go build main.go
+
+# run the binary
+./main
+
+# or on windows -
+.\main.exe
+```
+
+## Current list of features
+
+- `Express.js` API (customizable with `MongoDB` connection along with some other options)
+- Static site server (made in `Express.js`)
+- Basic `Go` API
+- Simple `Python Flask` API
+
+## Upcoming features
+
+- Express API with more options
+- React app
+- React Native app
+- Discord bot
+- Vue.js Site
+- Go API with more options
+- multiple versions of each with db's connocted along with many other things along the way
+
+## Contributing
+
+I don't think anyone will but if anyone does then I'm sorry for you having to go through this messy codebase
