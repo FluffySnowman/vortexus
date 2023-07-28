@@ -6,7 +6,7 @@ Vortexus is a cross-compatible CLI tool that can be used to create working proje
 
 ## Demo
 
-# ||add the video here||
+https://github.com/FluffySnowman/vortexus/assets/51316255/db2ca024-8c93-446f-9bd2-589803539937
 
 ## Usage
 
