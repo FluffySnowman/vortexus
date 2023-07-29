@@ -22,11 +22,13 @@ jobs:
       run: go get && go install
     
     - name: Build main file
-      run: go build main.go
+      run: go build main.go && mv main vortexus_linux_bin
     
     - name: Upload artifact
       uses: actions/upload-artifact@v3
       with:
-        name: vortexus_linux_bin
-        path: ./main
+        name: vortexus_build_artifact
+        path: ./vortexus_linux_bin
+
+
 
