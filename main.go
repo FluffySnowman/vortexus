@@ -98,7 +98,7 @@ options := []string{"Express.js API", "Simple Web Server (express.js)", "Python 
 				return
 			case 4:
 				fmt.Printf("You have chosen: %s\n", color.Green.Sprint(options[selectedIndex]))
-				fmt.Println("Press <enter> to continue")
+				// fmt.Println("Press <enter> to continue")
 				all_generations.GenerateReactApp()
 				return
 			}
