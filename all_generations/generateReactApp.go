@@ -28,27 +28,28 @@ func GenerateReactApp() {
 		},
 		{
 			FileName:       "react_app/package.json",
-			TemplateString: templates.ExpressPackageJson,
+			TemplateString: templates.ReactAppPackageJsonTemplate,
 		},
 		{
 			FileName:       "react_app/.gitignore",
 			TemplateString: templates.ReactAppGitingoreTemplate,
 		},
 		{
-			FileName:       "express_api/.dockerignore",
-			TemplateString: templates.ExpressDockerIgnore,
+			FileName:       "react_app/public/index.html",
+			TemplateString: templates.ReactAppPublicIndexHtmlTemplate,
 		},
 		{
-			FileName:       "express_api/.gitignore",
-			TemplateString: templates.ExpressGitIgnore,
+			FileName: 			"react_app/src/index.js",
+			TemplateString: templates.ReactAppIndexJsTemplate,
 		},
 	}
 
 	webServerPort := "0"
 
 	gen.ReadInput()
-	fmt.Println("\nCreating React App...\n")
+	fmt.Printf("\nCreating React App...\n")
 	gen.GenerateFiles(webServerPort, options, fileTemplates)
+
 }
 
 

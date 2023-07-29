@@ -5,64 +5,65 @@ func GetReactAppSrcTemplate() string {
 }
 
 const ReactSrcAppTemplate = `
-import React from 'react';
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+
+import React from "react";
+import { BrowserRouter as Router, Route, Link, Routes, Outlet } from "react-router-dom";
 
 function Home() {
-  return (
-    <div>
-      <h2>Home Page</h2>
-      <p>Welcome to the Home page!</p>
-    </div>
-  );
+	return (
+		<div>
+			<h2>Home Page</h2>
+			<p>Welcome to the Home page!</p>
+		</div>
+	);
 }
 
 function About() {
-  return (
-    <div>
-      <h2>About Page</h2>
-      <p>Welcome to the About page!</p>
-    </div>
-  );
+	return (
+		<div>
+			<h2>About Page</h2>
+			<p>Welcome to the About page!</p>
+		</div>
+	);
 }
 
 function Contact() {
-  return (
-    <div>
-      <h2>Contact Page</h2>
-      <p>Welcome to the Contact page!</p>
-    </div>
-  );
+	return (
+		<div>
+			<h2>Contact Page</h2>
+			<p>Welcome to the Contact page!</p>
+		</div>
+	);
 }
 
 function App() {
-  return (
-    <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
-          </ul>
-        </nav>
+	return (
+		<Router>
+			<div>
+				<nav>
+					<ul>
+						<li>
+							<Link to="/">Home</Link>
+						</li>
+						<li>
+							<Link to="/about">About</Link>
+						</li>
+						<li>
+							<Link to="/contact">Contact</Link>
+						</li>
+					</ul>
+				</nav>
 
-        <hr />
+				<hr />
 
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
-        </Switch>
-      </div>
-    </Router>
-  );
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/about" element={<About />} />
+					<Route path="/contact" element={<Contact />} />
+				</Routes>
+			</div>
+		</Router>
+	);
 }
 
 export default App;
@@ -114,6 +115,8 @@ const ReactAppPackageJsonTemplate = `
 
 const ReactAppGitingoreTemplate = `
 /node_modules
+node_modules
+node_modules/
 /.pnp
 .pnp.js
 
@@ -136,7 +139,7 @@ yarn-error.log*
 
 `
 
-const ReactAppPublicIndexTemplate = `
+const ReactAppPublicIndexHtmlTemplate = `
 <!DOCTYPE html>
 <html lang="en">
   <head>
