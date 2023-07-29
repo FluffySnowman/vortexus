@@ -23,7 +23,7 @@ The binaries can be downloaded from the [releases page](https://github.com/fluff
 
 ```bash
 # download the binary to a file
-curl https://raw.githubusercontent.com/FluffySnowman/vortexus/binaries/vortexus_linux_amd64 > vortexus
+curl https://raw.githubusercontent.com/FluffySnowman/vortexus/binaries/linux/vortexus_linux_amd64 > vortexus
 
 # change made to executable
 chmod +x vortexus
@@ -36,7 +36,7 @@ chmod +x vortexus
 
 ```bash
 # download the binary to a file
-curl https://raw.githubusercontent.com/FluffySnowman/vortexus/binaries/vortexus_windows_x86.exe > vortexus.exe
+curl https://raw.githubusercontent.com/FluffySnowman/vortexus/binaries/windows/vortexus_windows_x86.exe > vortexus.exe
 
 # run the binary
 .\vortexus.exe
@@ -64,6 +64,7 @@ go build main.go
 ## Current list of features
 
 - `Express.js` API (customizable with `MongoDB` connection along with some other options)
+- `React.js` 3 page website 
 - Static site server (made in `Express.js`)
 - Basic `Go` API
 - Simple `Python Flask` API
@@ -71,7 +72,6 @@ go build main.go
 ## Upcoming features
 
 - Express API with more options
-- React app
 - React Native app
 - Discord bot
 - Vue.js Site
