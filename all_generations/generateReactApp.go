@@ -42,6 +42,10 @@ func GenerateReactApp() {
 			FileName: 			"react_app/src/index.js",
 			TemplateString: templates.ReactAppIndexJsTemplate,
 		},
+		{
+			FileName: 			"react_app/src/App.css",
+			TemplateString: templates.ReactSrcAppCssTemplate,
+		},
 	}
 
 	webServerPort := "0"

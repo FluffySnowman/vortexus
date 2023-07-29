@@ -7,13 +7,17 @@ func GetReactAppSrcTemplate() string {
 const ReactSrcAppTemplate = `
 
 import React from "react";
-import { BrowserRouter as Router, Route, Link, Routes, Outlet } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
+import "./App.css";
 
 function Home() {
 	return (
 		<div>
 			<h2>Home Page</h2>
-			<p>Welcome to the Home page!</p>
+			<h3>This is the home page for this website</h3>
+			<h1>
+				feel free to edit this website template in the <code>./src/App.js</code> file in the root directory of this project
+			</h1>
 		</div>
 	);
 }
@@ -22,7 +26,7 @@ function About() {
 	return (
 		<div>
 			<h2>About Page</h2>
-			<p>Welcome to the About page!</p>
+			<h3>This is the about page</h3>
 		</div>
 	);
 }
@@ -31,7 +35,7 @@ function Contact() {
 	return (
 		<div>
 			<h2>Contact Page</h2>
-			<p>Welcome to the Contact page!</p>
+			<h3>This is the contact page</h3>
 		</div>
 	);
 }
@@ -39,9 +43,9 @@ function Contact() {
 function App() {
 	return (
 		<Router>
-			<div>
+			<div className="app">
 				<nav>
-					<ul>
+					<ul className="nav-links">
 						<li>
 							<Link to="/">Home</Link>
 						</li>
@@ -67,6 +71,55 @@ function App() {
 }
 
 export default App;
+
+`
+
+const ReactSrcAppCssTemplate = `
+
+:root {
+	background-color: black;
+	color: #20c20e;
+	font-family: "Courier New", Courier, monospace;
+}
+
+.app {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.nav-links {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.nav-links li {
+	margin: 0 10px;
+	padding: 5px;
+}
+
+.nav-links li a {
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.nav-links li a:hover {
+	color: #007bff;
+	background-color: #ffffff4f;
+	padding: 10px;
+}
+
+hr {
+	margin: 20px 0;
+	border: 0;
+	border-top: 1px solid #ccc;
+}
+
+
 
 `
 
@@ -146,7 +199,6 @@ const ReactAppPublicIndexHtmlTemplate = `
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
 
     <title>React App</title>
   </head>
