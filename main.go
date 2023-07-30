@@ -31,7 +31,7 @@ func main() {
 // THE MAIN MENU FUNCTION
 func mainMenu() {
 
-options := []string{"Express.js API", "Simple Web Server (express.js)", "Python API (FastAPI)", "Basic GO API", "React Web App" }
+options := []string{"Express.js API", "Simple Web Server (express.js)", "Python API (FastAPI)", "Basic GO API", "React Web App", "Vue Website" }
 
 	optionDescriptions := []string{
 		"A basic and flexible REST API using Express.js",
@@ -39,6 +39,7 @@ options := []string{"Express.js API", "Simple Web Server (express.js)", "Python 
 		"Simple API in python using FastAPI (this is the best option [SOURCE: trust me bro])",
 		"A basic API in GO",	
 		"A 3 page react app with a navbar",
+		"A basice Vue website",
 	}
 
 	fmt.Println("Use the arrow keys to select an API to create, then press enter to select")
@@ -100,6 +101,10 @@ options := []string{"Express.js API", "Simple Web Server (express.js)", "Python 
 				fmt.Printf("You have chosen: %s\n", color.Green.Sprint(options[selectedIndex]))
 				// fmt.Println("Press <enter> to continue")
 				all_generations.GenerateReactApp()
+				return
+			case 5:
+				fmt.Println("You have chosen: " + color.Green.Sprint(options[selectedIndex]))
+				all_generations.GenerateVueApp()
 				return
 			}
 
