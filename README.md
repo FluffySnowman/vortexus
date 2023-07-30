@@ -6,9 +6,9 @@ Vortexus is a cross-compatible CLI tool that can be used to create working proje
 
 ## Demo
 
-https://github.com/FluffySnowman/vortexus/assets/51316255/db2ca024-8c93-446f-9bd2-589803539937
+https://github.com/FluffySnowman/vortexus/assets/51316255/d9e9031b-ac7f-475d-8512-d9def0e32a22
 
-## Usage
+## Installation and Running
 
 The binaries can be downloaded from the [releases page](https://github.com/fluffysnowman/vortexus/releases) or can be built from source.
 
@@ -64,7 +64,8 @@ go build main.go
 ## Current list of features
 
 - `Express.js` API (customizable with `MongoDB` connection along with some other options)
-- `React.js` 3 page website 
+- `React.js` 3 page website
+- `Vue.js` website
 - Static site server (made in `Express.js`)
 - Basic `Go` API
 - Simple `Python Flask` API
@@ -74,7 +75,6 @@ go build main.go
 - Express API with more options
 - React Native app
 - Discord bot
-- Vue.js Site
 - Go API with more options
 - multiple versions of each with db's connocted along with many other things along the way
 
